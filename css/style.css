@@ -1,0 +1,115 @@
+:root {
+    /* Colores principales */
+    --primary-bg: #fdfcfd; /* blanco */
+    --secundary-bg: #f6f5ec;
+    --primary-text: #582c12; /* gris oscuro */
+    --secundary-text: #8d8480; /* Texto secundario */
+
+    /* Colores secundarios */
+    --accent-yellow: #ffd43a;
+    --black: #13191a;
+
+    /* Colores de acento */
+    --accent-green: #4caf50;
+    --accent-neon-green: #39ff14;
+    --accent-orange: #e27300;
+    --accent-blue2: #03a9f4;
+    --accent-fucsia: #ff00ff;
+    --accent-orchidea: #d668e3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'georgia', serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+/*---HEADER---*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: var(--secundary-bg);
+    box-shadow: 0 4px 25px -22px var(--primary-text);
+    z-index: 2;
+}
+
+.header-content {
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+}
+
+.logo {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+}
+
+.logo h1 {
+    color: var(--primary-text);
+}
+
+.logo h1 b {
+    color: var(--accent-yellow);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0px 20px;
+    height: 100%;
+    display: flex;
+    gap: 2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--secundary-text);
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu a::after {
+    content: '';
+    width: 1.5rem;
+    height: 1px;
+    background-color: var(--accent-yellow);
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    transition: color 300ms;
+    opacity: 0;
+}
+
+.menu a:hover::after {
+    opacity: 1;
+}
+
+.menu a:hover {
+    color: var(--accent-yellow);
+}
