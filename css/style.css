@@ -1,21 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 :root {
     /* Colores principales */
+    --chocolate: #582c12;
+    --amarillo: #ffd700;
     --primary-bg: #fdfcfd; /* blanco */
-    --secundary-bg: #f6f5ec;
-    --primary-text: #582c12; /* gris oscuro */
+    --secundary-bg: #f6f5ec;    
+    --primary-text: #13191a; /* gris oscuro */
     --secundary-text: #8d8480; /* Texto secundario */
+    
+    /*Enlaces*/
+    --coral-suave: #ff6f61;
 
-    /* Colores secundarios */
-    --accent-yellow: #ffd43a;
-    --black: #13191a;
+    /*Subtítulos*/
+    --azul-suave: #4a90e2;
+    --rosado-suave: #f28d8c;
+    
+    /* Elementos decorativos y destacados (Íconos) */
+    --verde-menta: #98ff98;
 
-    /* Colores de acento */
-    --accent-green: #4caf50;
-    --accent-neon-green: #39ff14;
-    --accent-orange: #e27300;
-    --accent-blue2: #03a9f4;
-    --accent-fucsia: #ff00ff;
-    --accent-orchidea: #d668e3;
+    /* Fuentes */
+    --fuente-principal: "Lora", serif;
+    --fuente-secundaria: "Raleway", sans-serif;
+    --fuente-títulos: "Playfair Display", serif;  
+
 }
 
 * {
@@ -23,7 +37,6 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'georgia', serif;
 }
 
 html {
@@ -56,17 +69,18 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     font-size: 1.5rem;
     letter-spacing: -1px;
+    font-family: var(--fuente-títulos);
 }
 
 .logo h1 {
-    color: var(--primary-text);
+    color: var(--chocolate);
 }
 
 .logo h1 b {
-    color: var(--accent-yellow);
+    color: var(--amarillo);
 }
 
 .menu {
@@ -87,17 +101,18 @@ header {
 .menu a {
     text-decoration: none;
     font-size: 1.3rem;
-    color: var(--secundary-text);
+    color: var(--chocolate);
     font-weight: 600;
     text-transform: uppercase;
     position: relative;
+    font-family: var(--fuente-secundaria);
 }
 
 .menu a::after {
     content: '';
     width: 1.5rem;
     height: 1px;
-    background-color: var(--accent-yellow);
+    background-color: var(--amarillo);
     position: absolute;
     bottom: -3px;
     left: 50%;
@@ -111,5 +126,58 @@ header {
 }
 
 .menu a:hover {
-    color: var(--accent-yellow);
+    color: var(--amarillo);
 }
+
+/*Portada*/
+.container-cover {
+    width: 100%;
+    height: 50rem;
+    position: relative;
+    top: 8rem;
+    background-image: url(/img/earth.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-cover:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgb(95, 71, 20, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container-info-cover {
+    max-width: 80rem;
+    height: 50rem;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+.container-info-cover h1 {
+    font-size: 6rem;
+    font-weight: 500;
+    color: var(--amarillo);
+    text-shadow: 1px 1px 3px rgba(22, 199, 199, 0.9);
+    margin-bottom: 2rem;
+    font-family: "Protest Revolution", sans-serif;
+}
+
+.container-info-cover p {
+    color: var(--primary-bg);
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: var(--fuente-secundaria);
+}
+
+
