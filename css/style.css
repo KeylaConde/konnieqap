@@ -187,6 +187,8 @@ header {
     width: 100%;
     margin: auto;
     margin-top: 4rem;
+    display: flex;
+    justify-content: center;
 }
 
 article {
@@ -223,6 +225,7 @@ article p {
     font-family: var(--fuente-principal);
     font-size: 1.8rem;
     color: var(--primary-text);
+    line-height: 1.6;
 }
 
 article img {
@@ -238,6 +241,7 @@ article h2 {
 }
 article ul li {
     font-size: 1.8rem;
+    line-height: 1.6;
 }
 
 article ul li a {
@@ -251,4 +255,57 @@ article ul li a:hover {
 
 em {
     color: var(--rosado-suave);
+}
+
+/* Aside de los artículos relacionados */
+.container-aside aside {
+    width: 32rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 2rem -2rem var(--primary-text);
+    overflow: hidden;
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    background-color: var(--secundary-bg);
+}
+
+.container-aside aside img {
+    width: 100%;
+}
+
+.container-aside aside h2,
+.container-aside aside p {
+    margin-top: 2rem;
+    padding: 0rem 2rem;
+}
+
+.container-aside aside h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--chocolate);
+}
+
+.container-aside aside p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--primary-text);
+}
+
+
+.container-aside aside button {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    padding: 1rem 5rem;
+    font-size: 1.6rem;
+    background: var(--azul-suave);
+    border: none;
+    color: var(--primary-bg);
+    cursor: pointer;
+    border-radius: 0.6rem;
+}
+
+.container-aside aside button:hover {
+    opacity: 0.9;
+    background-color: var(--amarillo);
+    color: var(--chocolate);
 }
