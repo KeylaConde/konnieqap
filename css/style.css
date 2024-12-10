@@ -25,6 +25,10 @@
     /* Elementos decorativos y destacados (Íconos) */
     --verde-menta: #98ff98;
 
+    /* Acentos */
+    --rojo-pinterest: #e60023;
+    --rojo-youtube: #ff0000;
+
     /* Fuentes */
     --fuente-principal: "Lora", serif;
     --fuente-secundaria: "Raleway", sans-serif;
@@ -274,6 +278,7 @@ em {
 }
 
 .container-aside aside h2,
+.container-aside aside h4,
 .container-aside aside p {
     margin-top: 2rem;
     padding: 0rem 2rem;
@@ -283,12 +288,21 @@ em {
     font-size: 2.5rem;
     font-weight: bold;
     color: var(--chocolate);
+    font-family: var(--fuente-títulos);
+}
+
+.container-aside aside h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--azul-suave);
+    font-family: var(--fuente-secundaria);
 }
 
 .container-aside aside p {
     font-size: 1.6rem;
     line-height: 1.6;
     color: var(--primary-text);
+    font-family: var(--fuente-principal);
 }
 
 
@@ -308,4 +322,76 @@ em {
     opacity: 0.9;
     background-color: var(--amarillo);
     color: var(--chocolate);
+}
+
+/* Footer */
+.container-footer {
+    width: 100%;
+    padding: 4rem 0;
+    background: var(--secundary-bg);
+    margin-top: 4rem;
+}
+
+.container-footer footer {
+    width: 100%;
+    margin: auto;
+}
+
+.container-footer footer .logo-footer {
+    text-align: center;
+}
+
+.container-footer footer .logo-footer img {
+    width: 10rem;
+    border-radius: 50%;
+    border: 2px solid var(--amarillo);
+}
+
+.container-footer footer .redes-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.container-footer footer .redes-footer .icon-redes-footer {
+    font-size: 2rem;
+    margin: 2rem;
+    background: var(--chocolate);
+    color: var(--verde-menta);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+
+}
+
+.container-footer .redes-footer .fa-facebook-f:hover {
+    background: var(--azul-suave);
+    color: var(--primary-bg);
+}
+
+.container-footer .redes-footer .fa-pinterest-p:hover {
+    background: var(--rojo-pinterest);
+    color: var(--primary-bg);
+}
+
+.container-footer .redes-footer .fa-instagram:hover {
+    background: linear-gradient(to top right, #fcde30, #e9712a, #d2313b, #ae4198, #7540a1, #5443a8);
+    color: var(--primary-bg);
+}
+
+.container-footer footer hr {
+    margin-top: 2rem;
+    border: none;
+    height: 2px;
+    background-color: var(--verde-menta);
+}
+
+.container-footer h4{
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--secundary-text);
+    font-weight: 500px;
 }
