@@ -2,118 +2,133 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Konnie QAP</title>
     <script src="https://kit.fontawesome.com/23cfa67533.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 
 <body>
 
     <!--Header - menu-->
-    <header class="header-content">
+    <header>
 
-        <div class="logo">
-            <h1>Konnie<b>QAP</b></h1>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Konnie<b>QAP</b></h1>
+            </div>
+    
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-house"></i>Inicio</a>
+                            <a href="#"><i class="fa-solid fa-utensils"></i>Cocina</a>
+                            <a href="#"><i class="fa-solid fa-blog"></i>Blog</a>
+                            <a href="#"><i class="fa-solid fa-store"></i>Productos</a>
+                            <a href="#"><i class="fa-solid fa-headset"></i>Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
 
-        <div class="menu">
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a>
-                        <a href="#">Recetas</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Productos</a>
-                        <a href="#">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
+        <div id="icon-menu">
+            <i class="fa-solid fa-bars"></i>
         </div>
 
     </header>
     <!--/Header - menu-->
 
     <!--Portada-->
-    <div class="container-cover">
-        <div class="container-info-cover">
-            <h1>¡Explora, descubre, conecta!</h1>
-            <p>Ideas frescas, historias únicas y temas para todos.</p>
-        </div>
-    </div>
 
-    <div class="container-content">
-        <article>
-            <h1>¡Bienvenidos a KonnieQAP: Un espacio para la salud, creatividad, el entretenimiento y bla, bla, bla!</h1>
-            <h2>¿Qué es KonnieQAP?</h2>
-            <p>
-                ¿Alguna vez has buscado un lugar donde se unan recetas deliciosas, recomendaciones de series, películas y un enfoque en la vida saludable?<br>¡Bienvenido, lo has encontrado! <br>En este blog exploraremos juntos temas que inspiran, nutren y entretienen.
-            </p>
-            <img src="https://github.com/KeylaConde/konnieqap/blob/master/img/woman-7529904_1280.png?raw=true" alt="imagen de vida equilibrada">
+    <div class="container-all" id="move-content">
 
-            <h2>¿Qué encontrarás aquí?</h2>
-            <p>KonnieQAP es un espacio donde comparto:</p>
-            <ul>
-                <li><strong><a href="#">Salud alternativa:</a></strong> Exploraremos formas naturales de cuidar nuestro bienestar.</li>
-                <li><strong><a href="#">Recetas deliciosas:</a></strong> Platos fáciles y nutritivos para cualquier momento.</li>
-                <li><strong><a href="#">Recomendaciones de series y películas:</a></strong> Desde clásicos como <em>Smallville</em> hasta tendencias actuales como <em>Stranger Things</em>.</li>
-                <li><strong><a href="#">Estilo de vida:</a></strong> Consejos prácticos para un equilibrio personal en un mundo acelerado.</li>
-            </ul>
-
-            <h2>Sobre mí</h2>
-            <p>
-                Soy una apasionada del cine, la programación, las artes y todo lo que inspire creatividad y bienestar. Crear este blog es mi manera de compartir lo que amo y conectar con personas que valoran un enfoque auténtico hacia la vida. 
-            </p>
-            <h2>¡Únete a la aventura!</h2>
-            <p>
-                Este blog no es solo mío, es nuestro. Espero que encuentres en KonnieQAP un lugar para inspirarte, aprender y disfrutar. <br> ¿Qué tema te gustaría leer primero? ¡Déjamelo saber en mis redes sociales!
-            </p>
-            <img src="https://github.com/KeylaConde/konnieqap/blob/master/img/news-1074604_1280.jpg?raw=true" alt="imagen de noticias del mundo">
-        </article>
-
-        <div class="container-aside">
-            <aside>
-                <img src="https://github.com/KeylaConde/konnieqap/blob/master/img/woman-tomando-sol.png?raw=true" alt="mujer tomando sol">
-                <h2>Pequeños cambios, grandes transformaciones:</h2> 
-                <h4>Cómo mejoré mi rutina diaria</h4>
-                <p>A veces, no necesitas un cambio radical para mejorar tu vida, solo pequeños pasos en la dirección correcta.</p>
-                <a href="#"><button>Leer más</button></a>
-            </aside>
-
-            <aside>
-                <img src="https://github.com/KeylaConde/konnieqap/blob/master/img/cayeye-desayuno%20(1)%20(1)%20(1).jpeg?raw=true" alt="desayuno cayeye">
-                <h2>Cayeye con huevos fritos y tocineta:</h2> 
-                <h4>Un desayuno con sabor tradicional</h4> 
-                <p>El <em>Cayeye</em>, un plato típico de la costa Caribe colombiana, es una deliciosa manera de empezar el día. Este desayuno combina tradición, sabor y una explosión de energía.</p>
-                <a href="#"><button>Leer más</button></a>
-            </aside>
-
-            <aside>
-                <img src="https://github.com/KeylaConde/konnieqap/blob/master/img/stranger-things.jpeg?raw=true" alt="stranger things">
-                <h2>Stranger Things: </h2>
-                <h4>La nostalgia de los 80 y el mundo del Upside Down</h4>
-                <p>Pocas series han capturado la imaginación colectiva como <em>Stranger Things</em>. Con su mezcla de nostalgia ochentera, ciencia ficción y personajes entrañables, esta producción de Netflix ha marcado un antes y un después en la televisión moderna.</p>
-                <a href="#"><button>Leer más</button></a>
-            </aside>
-        </div>
-    </div>
-
-    <!--Footer-->
-    <div class="container-footer">
-        <footer>
-            <div class="logo-footer">
-                <img src="https://github.com/KeylaConde/konnieqap/blob/master/img/foto-konnieqap.jpg?raw=true" alt="foto de Konnie y su gato">
+        <div class="container-cover">
+            <div class="container-info-cover">
+                <h1>¡Explora, descubre, conecta!</h1>
+                <p>Ideas frescas, historias únicas y temas para todos.</p>
             </div>
-
-            <div class="redes-footer">
-                <a href="#"><i class="fa-brands fa-facebook-f icon-redes-footer"></i></a>
-                <a href="#"><i class="fa-brands fa-pinterest-p icon-redes-footer"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram icon-redes-footer"></i></a>
+        </div>
+    
+        <div class="container-content">
+            <article>
+                <h1>¡Bienvenidos a KonnieQAP: Un espacio para la salud, creatividad, el entretenimiento y bla, bla, bla!</h1>
+                <h2>¿Qué es KonnieQAP?</h2>
+                <p>
+                    ¿Alguna vez has buscado un lugar donde se unan recetas deliciosas, recomendaciones de series, películas y un enfoque en la vida saludable?<br>¡Bienvenido, lo has encontrado! <br>En este blog exploraremos juntos temas que inspiran, nutren y entretienen.
+                </p>
+                <img src="https://github.com/KeylaConde/konnieqap/blob/master/img/woman-7529904_1280.png?raw=true" alt="imagen de vida equilibrada">
+    
+                <h2>¿Qué encontrarás aquí?</h2>
+                <p>KonnieQAP es un espacio donde comparto:</p>
+                <ul>
+                    <li><strong><a href="#">Salud alternativa:</a></strong> Exploraremos formas naturales de cuidar nuestro bienestar.</li>
+                    <li><strong><a href="#">Recetas deliciosas:</a></strong> Platos fáciles y nutritivos para cualquier momento.</li>
+                    <li><strong><a href="#">Recomendaciones de series y películas:</a></strong> Desde clásicos como <em>Smallville</em> hasta tendencias actuales como <em>Stranger Things</em>.</li>
+                    <li><strong><a href="#">Estilo de vida:</a></strong> Consejos prácticos para un equilibrio personal en un mundo acelerado.</li>
+                </ul>
+    
+                <h2>Sobre mí</h2>
+                <p>
+                    Soy una apasionada del cine, la programación, las artes y todo lo que inspire creatividad y bienestar. Crear este blog es mi manera de compartir lo que amo y conectar con personas que valoran un enfoque auténtico hacia la vida. 
+                </p>
+                <h2>¡Únete a la aventura!</h2>
+                <p>
+                    Este blog no es solo mío, es nuestro. Espero que encuentres en KonnieQAP un lugar para inspirarte, aprender y disfrutar. <br> ¿Qué tema te gustaría leer primero? ¡Déjamelo saber en mis redes sociales!
+                </p>
+                <img src="https://github.com/KeylaConde/konnieqap/blob/master/img/news-1074604_1280.jpg?raw=true" alt="imagen de noticias del mundo">
+            </article>
+    
+            <div class="container-aside">
+                <aside>
+                    <img src="/img/mujer-saludable.jpg" alt="mujer tomando sol">
+                    <h2>Pequeños cambios, grandes transformaciones:</h2> 
+                    <h4>Cómo mejoré mi rutina diaria</h4>
+                    <p>A veces, no necesitas un cambio radical para mejorar tu vida, solo pequeños pasos en la dirección correcta.</p>
+                    <a href="#"><button>Leer más</button></a>
+                </aside>
+    
+                <aside>
+                    <img src="https://github.com/KeylaConde/konnieqap/blob/master/img/cayeye-desayuno%20(1)%20(1)%20(1).jpeg?raw=true" alt="desayuno cayeye">
+                    <h2>Cayeye con huevos fritos y tocineta:</h2> 
+                    <h4>Un desayuno con sabor tradicional</h4> 
+                    <p>El <em>Cayeye</em>, un plato típico de la costa Caribe colombiana, es una deliciosa manera de empezar el día. Este desayuno combina tradición, sabor y una explosión de energía.</p>
+                    <a href="#"><button>Leer más</button></a>
+                </aside>
+    
+                <aside>
+                    <img src="https://github.com/KeylaConde/konnieqap/blob/master/img/stranger-things.jpeg?raw=true" alt="stranger things">
+                    <h2>Stranger Things: </h2>
+                    <h4>La nostalgia de los 80 y el mundo del Upside Down</h4>
+                    <p>Pocas series han capturado la imaginación colectiva como <em>Stranger Things</em>. Con su mezcla de nostalgia ochentera, ciencia ficción y personajes entrañables, esta producción de Netflix ha marcado un antes y un después en la televisión moderna.</p>
+                    <a href="#"><button>Leer más</button></a>
+                </aside>
             </div>
+        </div>
+    
+        <!--Footer-->
+        <div class="container-footer">
+            <footer>
+                <div class="logo-footer">
+                    <img src="https://github.com/KeylaConde/konnieqap/blob/master/img/foto-konnieqap.jpg?raw=true" alt="foto de Konnie y su gato">
+                </div>
+    
+                <div class="redes-footer">
+                    <a href="#"><i class="fa-brands fa-facebook-f icon-redes-footer"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p icon-redes-footer"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram icon-redes-footer"></i></a>
+                </div>
+    
+                <hr>
+                <h4>&copy;KonnieQAP-Todos los Derechos Reservados</h4>
+            </footer>
+        </div>
 
-            <hr>
-            <h4>&copy;KonnieQAP-Todos los Derechos Reservados</h4>
-        </footer>
     </div>
+
+    <script src="js/script.js"></script>
     
 </body>
 

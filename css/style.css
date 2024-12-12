@@ -28,6 +28,7 @@
     /* Acentos */
     --rojo-pinterest: #e60023;
     --rojo-youtube: #ff0000;
+    --azul-facebook: #1877F2;
 
     /* Fuentes */
     --fuente-principal: "Lora", serif;
@@ -62,7 +63,7 @@ header {
 }
 
 .header-content {
-    width: 100%;
+    width: 120rem;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -135,6 +136,34 @@ header {
     color: var(--amarillo);
 }
 
+.menu nav ul li a i {
+    display: none;
+}
+
+#icon-menu {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    right: 2rem;
+    top: 1.6rem;
+    font-size: 2rem;
+    border-radius: 100%;
+    background-color: var(--primary-bg);
+    color: var(--amarillo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem;
+    box-shadow: 1px 1px 3px rgba(65, 53, 32, 0.9);
+    display: none;
+}
+
+#icon-menu:hover {
+    color: var(--chocolate);
+    box-shadow: 1px 1px 3px rgba(22, 199, 199, 0.9);
+}
+
 /*Portada*/
 .container-cover {
     width: 100%;
@@ -188,7 +217,7 @@ header {
 
 /* Container contenido del artículo */
 .container-content {
-    width: 100%;
+    width: 120rem;
     margin: auto;
     margin-top: 4rem;
     display: flex;
@@ -213,7 +242,7 @@ article:before {
     position: absolute;
     top: 0;
     left: 0;
-    background: var(--verde-menta);
+    background: var(--amarillo);
 }
 
 article h1 {
@@ -249,7 +278,7 @@ article ul li {
 }
 
 article ul li a {
-    color: var(--azul-suave);
+    color: var(--chocolate);
     text-decoration: none;
 }
 
@@ -258,7 +287,7 @@ article ul li a:hover {
 }
 
 em {
-    color: var(--rosado-suave);
+    color: var(--azul-suave);
 }
 
 /* Aside de los artículos relacionados */
@@ -275,6 +304,7 @@ em {
 
 .container-aside aside img {
     width: 100%;
+    height: 20rem;
 }
 
 .container-aside aside h2,
@@ -311,7 +341,7 @@ em {
     margin-left: 2rem;
     padding: 1rem 5rem;
     font-size: 1.6rem;
-    background: var(--azul-suave);
+    background: var(--chocolate);
     border: none;
     color: var(--primary-bg);
     cursor: pointer;
@@ -356,19 +386,20 @@ em {
 .container-footer footer .redes-footer .icon-redes-footer {
     font-size: 2rem;
     margin: 2rem;
-    background: var(--chocolate);
-    color: var(--verde-menta);
+    background: var(--primary-bg);
+    color: var(--amarillo);
     width: 5rem;
     height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 100%;
+    box-shadow: 1px 1px 3px rgba(65, 53, 32, 0.9);
 
 }
 
 .container-footer .redes-footer .fa-facebook-f:hover {
-    background: var(--azul-suave);
+    background: var(--azul-facebook);
     color: var(--primary-bg);
 }
 
@@ -386,7 +417,7 @@ em {
     margin-top: 2rem;
     border: none;
     height: 2px;
-    background-color: var(--verde-menta);
+    background-color: var(--amarillo);
 }
 
 .container-footer h4{
@@ -394,4 +425,92 @@ em {
     margin-top: 2rem;
     color: var(--secundary-text);
     font-weight: 500px;
+}
+
+/* Responsive Design - adaptable a mobile */
+@media screen and (max-width: 1220px) {
+    .header-content,
+    .container-content,
+    footer {
+        max-width: 100rem;
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .container-content {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    article {
+        box-shadow: 0 0 0 0;
+    }
+
+    .container-aside {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-aside aside {
+        max-width: 30rem;
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .container-all {
+        transition: all 300ms;
+        transition: all 300ms cubic-bezier(1,0,0,1);
+    }
+
+    .move-container-all {
+        transform: translateX(30rem);
+    }
+
+    .menu {
+        width: 0rem;
+        height: 100vh;
+        position: fixed;
+        top: 8rem;
+        left: 0;
+        background-color: var(--secundary-bg);
+        overflow: hidden;
+        transform: translateX(-35rem);
+        box-shadow: 1rem 0 2rem -2.5rem var(--primary-text);
+        transition: all 300ms cubic-bezier(1,0,0,1); 
+    }
+
+    .show-lateral {
+        width: 30rem;
+        transform: translateX(0rem);
+    }
+
+    .menu nav ul li {
+        flex-direction: column;
+        max-width: 20rem;
+        height: 5rem;
+        justify-content: flex-end;
+        margin-top: 4rem;
+    }
+
+    .menu nav ul li a {
+        margin-top: 3rem;   
+    }
+
+    .menu nav ul li a i {
+        color: var(--amarillo);
+        width: 2rem;
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    #icon-menu {
+        display: flex;
+    }
+
+    .container-aside {
+        flex-wrap: wrap;
+    }
 }
